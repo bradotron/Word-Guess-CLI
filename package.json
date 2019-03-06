@@ -1,0 +1,22 @@
+{
+  "name": "word-guess-cli",
+  "version": "1.0.0",
+  "description": "This is a command-line word-guessing game.",
+  "main": "word-guess.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradotron/Word-Guess-CLI.git"
+  },
+  "author": "Bradley Jensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradotron/Word-Guess-CLI/issues"
+  },
+  "homepage": "https://github.com/bradotron/Word-Guess-CLI#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2"
+  }
+}
