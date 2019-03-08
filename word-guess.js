@@ -29,6 +29,15 @@ var alphabet = [
   `y`,
   `z`
 ];
+
+var wordBank = [
+  `laser`,
+  `ridiculous`,
+  `apple`,
+  'elephant',
+  `telephone`,
+]
+
 var randomWord = {};
 var done = false;
 var lives = 10;
@@ -36,10 +45,14 @@ var totalScore = 0;
 
 initializeGame = function() {
   // generate a random word
-  randomWord = new Word("hurrdurr");
+  randomWord = new Word(getRandomWord());
   done = false;
   lives = 10;
 };
+
+let getRandomWord = function() {
+  return wordBank[Math.floor(Math.random()*wordBank.length)];
+}
 
 let playRound = function() {
   printWordStatus();
